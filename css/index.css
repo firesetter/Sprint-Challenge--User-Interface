@@ -160,8 +160,6 @@ p {
 header {
   display: flex;
   align-items: flex-end;
-  border-top: 35px solid black;
-  padding-top: 20px;
 }
 
 header nav {
