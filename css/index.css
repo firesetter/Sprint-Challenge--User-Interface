@@ -159,19 +159,35 @@ p {
 
 header {
   display: flex;
-  align-items: flex-end;
   margin-top: 15px;
 }
 
 header nav {
   display: flex;
+  align-items: flex-end;
   justify-content: space-evenly;
   width: 600px;
+  margin-left: 10px;
+}
+
+@keyframes blinkTextOnce {
+  0% {
+    color: #ddd;
+  }
+  100% {
+    color: black;
+  }
 }
 
 header nav a {
   text-decoration: none;
   color: black;
+  flex-grow: 1;
+  text-align: center;
+}
+
+header nav a:hover {
+  animation: blinkTextOnce 1s linear;
 }
 
 .banner {
@@ -315,4 +331,37 @@ footer nav a {
   display: flex;
   flex-direction: column;
   padding: 20px 0 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+form label,
+button {
+  margin-top: 40px;
+}
+
+form label,
+input,
+textarea,
+button {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+form button {
+  padding: 10px 30px;
+  width: 200px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+form button:hover {
+  background: black;
+  color: white;
 }
