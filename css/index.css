@@ -281,3 +281,38 @@ footer nav a {
 .middle-content .boxes .box.box10 {
   background: dodgerblue;
 }
+
+.about-section {
+  border-bottom: 1px dashed black;
+  padding: 0 15px 15px 15px;
+}
+
+.about-tiles {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 15px 0 15px;
+}
+
+.tile {
+  width: 50%;
+  border-bottom: 1px dashed black;
+  padding: 25px 0 25px 0;
+  margin-bottom: 20px;
+}
+
+.tile h4 {
+  padding-top: 10px;
+}
+.tile button {
+  border: 1px solid black;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+}
